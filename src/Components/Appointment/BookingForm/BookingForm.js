@@ -18,7 +18,7 @@ const BookingForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
         data.service = appointmentOn;
         data.date = date;
         data.created = new Date();
-        fetch('http://localhost:5000/addBookings',{
+        fetch('http://fast-cliffs-27204.herokuapp.com/addBookings',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(data)

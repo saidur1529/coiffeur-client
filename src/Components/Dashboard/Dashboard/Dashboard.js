@@ -18,7 +18,7 @@ const Dashboard = () => {
     }
 
     useEffect( () => {
-        fetch('http://localhost:5000/bookingsByDate', {
+        fetch('http://fast-cliffs-27204.herokuapp.com/bookingsByDate', {
             method: 'POST',
             headers: { 'content-type': 'application/json'},
             body: JSON.stringify({date: selectedDate})

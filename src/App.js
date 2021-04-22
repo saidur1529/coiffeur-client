@@ -10,6 +10,7 @@ import Home from './Components/Home/Home/Home';
 import Appointment from './Components/Appointment/Appointment/Appointment';
 import Login from './Components/Login/Login';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 function App() {
   return (
       <Router>
@@ -26,9 +27,9 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <Route path="/Dashboard/appointments">
-            <Dashboard></Dashboard>
-          </Route>
+          <PrivateRoute path="/Dashboard/appointments">
+            <Dashboard />
+          </PrivateRoute>
         </Switch>
       </div>
     </Router>
