@@ -1,5 +1,5 @@
 import './App.css';
-import React from "react";
+import React, { createContext, useState } from 'react';
 
 import {
   BrowserRouter as Router,
@@ -11,9 +11,13 @@ import Appointment from './Components/Appointment/Appointment/Appointment';
 import Login from './Components/Login/Login';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+
+export const UserContext = createContext();
 function App() {
+  const [loggedInUser, setLoggedInUser] = useState({});
   return (
-      <Router>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+            <Router>
       <div>
         <Switch>
         <Route exact path="/">
@@ -33,6 +37,7 @@ function App() {
         </Switch>
       </div>
     </Router>
+    </UserContext.Provider>
   );
 }
 
