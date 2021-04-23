@@ -32,10 +32,10 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
-          <PrivateRoute path="/Dashboard">
+          <PrivateRoute path="/dashboard">
             <Dashboard />
           </PrivateRoute>
-          <Route path="/dashboard/allCustomers">
+          <Route path="/allBookings">
             <AllCustomers />
           </Route>
         </Switch>

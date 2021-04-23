@@ -18,9 +18,9 @@
     top: 0;
 }
 
-.make-appointment button {
+.make-appointment button, h1{
     content:  "";
-    transform: translateX(-10px);
+    transform: translateX(-0px);
 }
 .make-appointment img{
     transform: translateY(-130px);

@@ -4,7 +4,7 @@ const Barbers = () => {
     return (
         <section className="doctors">
             <div className="container">
-                <h5 className="text-center  text-primary mb-5">Our Barbers</h5>
+                <h5 className="text-center text-primary mb-5">Our Barbers</h5>
                 <div className="row">
                 <Barber/>
                 <Barber/>

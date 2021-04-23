@@ -15,7 +15,7 @@ const AllCustomers = () => {
         <div className="container-fluid row " >
             <Sidebar></Sidebar>
             <div className="col-md-10 p-4 pe-5" style={{ position: "absolute", right: -12, backgroundColor: "#78909c" }}>
-                <h5 className="text-white">All Customres</h5>
+                <h5 className="text-white">All Customers</h5>
                 <AppointmentDataTable appointments={appointments} />
             </div>
         </div>

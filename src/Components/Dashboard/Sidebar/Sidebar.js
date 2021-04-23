@@ -15,22 +15,22 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/appointments" className="text-white">
-                        <FontAwesomeIcon icon={faCalendar} /> <span>Appointments</span> 
+                    <Link to="/allBookings" className="text-white">
+                        <FontAwesomeIcon icon={faCalendar} /> <span>All bookings</span> 
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/allCustomers" className="text-white">
+                    <Link to="/allCustomers" className="text-white">
                         <FontAwesomeIcon icon={faUsers} /> <span>Customers</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/bills" className="text-white">
+                    <Link to="/bills" className="text-white">
                         <FontAwesomeIcon icon={faFileAlt} /> <span>Bills</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/addService" className="text-white" >
+                    <Link to="/addService" className="text-white" >
                       <FontAwesomeIcon icon={faCog} /> <span>Add Service</span>
                     </Link>
                 </li>
