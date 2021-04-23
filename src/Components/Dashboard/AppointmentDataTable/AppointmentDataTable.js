@@ -5,13 +5,12 @@ const AppointmentDataTable = ({appointments}) => {
         <table className="table table-borderless">
             <thead>
                 <tr>
-                <th className="text-secondary text-left" scope="col">Sr No</th>
-                <th className="text-secondary" scope="col">Name</th>
-                <th className="text-secondary" scope="col">Gender</th>
-                <th className="text-secondary" scope="col">Age</th>
-                <th className="text-secondary" scope="col">Weight</th>
-                <th className="text-secondary" scope="col">Phone</th>
-                <th className="text-secondary" scope="col">Email</th>
+                <th className="text-white text-left" scope="col">Sr#</th>
+                <th className="text-white" scope="col">Name</th>
+                <th className="text-white" scope="col">Service</th>
+                <th className="text-white" scope="col">Date</th>
+                <th className="text-white" scope="col">Phone</th>
+                <th className="text-white" scope="col">Email</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,9 +20,8 @@ const AppointmentDataTable = ({appointments}) => {
                     <tr>
                         <td>{index + 1}</td>
                         <td>{appointment.name}</td>
-                        <td>{appointment.gender}</td>
-                        <td>{appointment.age}</td>
-                        <td>{appointment.weight}KG</td>
+                        <td>{appointment.service}</td>
+                        <td>{appointment.date}</td>
                         <td>{appointment.phone}</td>
                         <td>{appointment.email}</td>
                     </tr>

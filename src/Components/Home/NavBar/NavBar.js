@@ -26,7 +26,7 @@ const NavBar = () => {
                         </li>
                     </ul>
                     <div>
-                        <Link to="/Dashboard/appointments"><button className=" ms-5 btn btn-brand">Dashboard</button>
+                        <Link to="/Dashboard"><button className=" ms-5 btn btn-brand">Dashboard</button>
                         </Link>
                     </div>
                 </div>
